@@ -1,0 +1,759 @@
+[61029 - Suricata-Main] 2025-08-06 13:13:47 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[61029 - Suricata-Main] 2025-08-06 13:13:47 Info: cpu: CPUs/cores online: 10
+[61029 - Suricata-Main] 2025-08-06 13:13:47 Info: suricata: Setting engine mode to IDS mode by default
+[61029 - Suricata-Main] 2025-08-06 13:13:47 Info: exception-policy: master exception-policy set to: auto
+[61030 - Suricata-Main] 2025-08-06 13:13:48 Info: logopenfile: fast output device (regular) initialized: fast.log
+[61030 - Suricata-Main] 2025-08-06 13:13:48 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[61030 - Suricata-Main] 2025-08-06 13:13:48 Info: logopenfile: stats output device (regular) initialized: stats.log
+[61030 - Suricata-Main] 2025-08-06 13:13:48 Warning: detect: No rule files match the pattern /var/lib/suricata/rules/suricata.rules
+[61030 - Suricata-Main] 2025-08-06 13:13:48 Warning: detect: 1 rule files specified, but no rules were loaded!
+[61030 - Suricata-Main] 2025-08-06 13:13:48 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[61030 - Suricata-Main] 2025-08-06 13:13:48 Info: detect: 0 signatures processed. 0 are IP-only rules, 0 are inspecting packet payload, 0 inspect application layer, 0 are decoder event only
+[61030 - Suricata-Main] 2025-08-06 13:13:48 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[61030 - Suricata-Main] 2025-08-06 13:13:48 Info: runmodes: eth0: creating 10 threads
+[61030 - Suricata-Main] 2025-08-06 13:13:48 Info: unix-manager: unix socket '/var/run/suricata-command.socket'
+[61030 - Suricata-Main] 2025-08-06 13:13:49 Notice: threads: Threads created -> W: 10 FM: 1 FR: 1   Engine started.
+[61030 - Suricata-Main] 2025-08-06 13:15:27 Notice: suricata: Signal Received.  Stopping engine.
+[61030 - Suricata-Main] 2025-08-06 13:15:27 Info: suricata: time elapsed 99.380s
+[61030 - Suricata-Main] 2025-08-06 13:15:29 Info: counters: Alerts: 0
+[61030 - Suricata-Main] 2025-08-06 13:15:29 Notice: device: eth0: packets: 28, drops: 0 (0.00%), invalid chksum: 0
+[104846 - Suricata-Main] 2025-08-06 14:42:58 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[104846 - Suricata-Main] 2025-08-06 14:42:58 Info: cpu: CPUs/cores online: 10
+[104846 - Suricata-Main] 2025-08-06 14:42:58 Info: suricata: Setting engine mode to IDS mode by default
+[104846 - Suricata-Main] 2025-08-06 14:42:58 Info: exception-policy: master exception-policy set to: auto
+[104847 - Suricata-Main] 2025-08-06 14:42:58 Info: logopenfile: fast output device (regular) initialized: fast.log
+[104847 - Suricata-Main] 2025-08-06 14:42:58 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[104847 - Suricata-Main] 2025-08-06 14:42:58 Info: logopenfile: stats output device (regular) initialized: stats.log
+[104847 - Suricata-Main] 2025-08-06 14:42:58 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[104847 - Suricata-Main] 2025-08-06 14:42:58 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Request flood detected";       app-layer-event:dnp3.flooded; classtype:protocol-command-decode; sid:2270000; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 7
+[104847 - Suricata-Main] 2025-08-06 14:42:58 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[104847 - Suricata-Main] 2025-08-06 14:42:58 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Length too small";       app-layer-event:dnp3.len_too_small; classtype:protocol-command-decode; sid:2270001; rev:3;)" from file /etc/suricata/rules/dnp3-events.rules at line 13
+[104847 - Suricata-Main] 2025-08-06 14:42:58 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[104847 - Suricata-Main] 2025-08-06 14:42:58 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Bad link CRC";       app-layer-event:dnp3.bad_link_crc; classtype:protocol-command-decode; sid:2270002; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 17
+[104847 - Suricata-Main] 2025-08-06 14:42:58 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[104847 - Suricata-Main] 2025-08-06 14:42:58 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Bad transport CRC";       app-layer-event:dnp3.bad_transport_crc; classtype:protocol-command-decode; sid:2270003; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 21
+[104847 - Suricata-Main] 2025-08-06 14:42:58 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[104847 - Suricata-Main] 2025-08-06 14:42:58 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Unknown object";       app-layer-event:dnp3.unknown_object; classtype:protocol-command-decode; sid:2270004; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 25
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Protocol version"; app-layer-event:modbus.invalid_protocol_id; classtype:protocol-command-decode; sid:2250001; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 2
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus unsolicited response"; app-layer-event:modbus.unsolicited_response; classtype:protocol-command-decode; sid:2250002; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 4
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Length"; app-layer-event:modbus.invalid_length; classtype:protocol-command-decode; sid:2250003; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 6
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Function code"; app-layer-event:modbus.invalid_function_code; classtype:protocol-command-decode; sid:2250005; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 8
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Value"; app-layer-event:modbus.invalid_value; classtype:protocol-command-decode; sid:2250006; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 10
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Exception code invalid"; flow:to_client; app-layer-event:modbus.invalid_exception_code; classtype:protocol-command-decode; sid:2250007; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 12
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Data mismatch"; flow:to_client; app-layer-event:modbus.value_mismatch; classtype:protocol-command-decode; sid:2250008; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 14
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Request flood detected"; flow:to_server; app-layer-event:modbus.flooded; classtype:protocol-command-decode; sid:2250009; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 16
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Info: detect: 74 rule files processed. 44370 rules successfully loaded, 13 rules failed, 0
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[104847 - Suricata-Main] 2025-08-06 14:43:13 Info: detect: 44373 signatures processed. 947 are IP-only rules, 5108 are inspecting packet payload, 38100 inspect application layer, 109 are decoder event only
+[104847 - Suricata-Main] 2025-08-06 14:43:35 Warning: af-packet: eth0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[104847 - Suricata-Main] 2025-08-06 14:43:35 Info: runmodes: eth0: creating 10 threads
+[104847 - Suricata-Main] 2025-08-06 14:43:36 Info: unix-manager: unix socket '/var/run/suricata-command.socket'
+[104847 - Suricata-Main] 2025-08-06 14:43:37 Notice: threads: Threads created -> W: 10 FM: 1 FR: 1   Engine started.
+[104847 - Suricata-Main] 2025-08-06 15:00:19 Notice: suricata: Signal Received.  Stopping engine.
+[104847 - Suricata-Main] 2025-08-06 15:00:20 Info: suricata: time elapsed 1004.912s
+[104847 - Suricata-Main] 2025-08-06 15:00:25 Info: counters: Alerts: 0
+[104847 - Suricata-Main] 2025-08-06 15:00:27 Notice: device: eth0: packets: 168, drops: 0 (0.00%), invalid chksum: 0
+[115630 - Suricata-Main] 2025-08-06 15:03:44 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[115630 - Suricata-Main] 2025-08-06 15:03:44 Info: cpu: CPUs/cores online: 10
+[115630 - Suricata-Main] 2025-08-06 15:03:44 Info: suricata: Setting engine mode to IDS mode by default
+[115630 - Suricata-Main] 2025-08-06 15:03:44 Info: exception-policy: master exception-policy set to: auto
+[115631 - Suricata-Main] 2025-08-06 15:03:44 Info: logopenfile: fast output device (regular) initialized: fast.log
+[115631 - Suricata-Main] 2025-08-06 15:03:44 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[115631 - Suricata-Main] 2025-08-06 15:03:44 Info: logopenfile: stats output device (regular) initialized: stats.log
+[115631 - Suricata-Main] 2025-08-06 15:03:44 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[115631 - Suricata-Main] 2025-08-06 15:03:44 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Request flood detected";       app-layer-event:dnp3.flooded; classtype:protocol-command-decode; sid:2270000; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 7
+[115631 - Suricata-Main] 2025-08-06 15:03:44 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[115631 - Suricata-Main] 2025-08-06 15:03:44 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Length too small";       app-layer-event:dnp3.len_too_small; classtype:protocol-command-decode; sid:2270001; rev:3;)" from file /etc/suricata/rules/dnp3-events.rules at line 13
+[115631 - Suricata-Main] 2025-08-06 15:03:44 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[115631 - Suricata-Main] 2025-08-06 15:03:44 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Bad link CRC";       app-layer-event:dnp3.bad_link_crc; classtype:protocol-command-decode; sid:2270002; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 17
+[115631 - Suricata-Main] 2025-08-06 15:03:44 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[115631 - Suricata-Main] 2025-08-06 15:03:44 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Bad transport CRC";       app-layer-event:dnp3.bad_transport_crc; classtype:protocol-command-decode; sid:2270003; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 21
+[115631 - Suricata-Main] 2025-08-06 15:03:44 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[115631 - Suricata-Main] 2025-08-06 15:03:44 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Unknown object";       app-layer-event:dnp3.unknown_object; classtype:protocol-command-decode; sid:2270004; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 25
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Protocol version"; app-layer-event:modbus.invalid_protocol_id; classtype:protocol-command-decode; sid:2250001; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 2
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus unsolicited response"; app-layer-event:modbus.unsolicited_response; classtype:protocol-command-decode; sid:2250002; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 4
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Length"; app-layer-event:modbus.invalid_length; classtype:protocol-command-decode; sid:2250003; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 6
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Function code"; app-layer-event:modbus.invalid_function_code; classtype:protocol-command-decode; sid:2250005; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 8
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Value"; app-layer-event:modbus.invalid_value; classtype:protocol-command-decode; sid:2250006; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 10
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Exception code invalid"; flow:to_client; app-layer-event:modbus.invalid_exception_code; classtype:protocol-command-decode; sid:2250007; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 12
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Data mismatch"; flow:to_client; app-layer-event:modbus.value_mismatch; classtype:protocol-command-decode; sid:2250008; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 14
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Request flood detected"; flow:to_server; app-layer-event:modbus.flooded; classtype:protocol-command-decode; sid:2250009; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 16
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Info: detect: 74 rule files processed. 44370 rules successfully loaded, 13 rules failed, 0
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[115631 - Suricata-Main] 2025-08-06 15:03:59 Info: detect: 44373 signatures processed. 947 are IP-only rules, 5108 are inspecting packet payload, 38100 inspect application layer, 109 are decoder event only
+[115631 - Suricata-Main] 2025-08-06 15:04:09 Warning: af-packet: wlan0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[115631 - Suricata-Main] 2025-08-06 15:04:09 Info: runmodes: wlan0: creating 10 threads
+[115631 - Suricata-Main] 2025-08-06 15:04:09 Info: unix-manager: unix socket '/var/run/suricata-command.socket'
+[115631 - Suricata-Main] 2025-08-06 15:04:10 Notice: threads: Threads created -> W: 10 FM: 1 FR: 1   Engine started.
+[115631 - Suricata-Main] 2025-08-06 15:39:09 Notice: suricata: Signal Received.  Stopping engine.
+[115631 - Suricata-Main] 2025-08-06 15:39:10 Info: suricata: time elapsed 2101.559s
+[115631 - Suricata-Main] 2025-08-06 15:39:18 Info: counters: Alerts: 5
+[115631 - Suricata-Main] 2025-08-06 15:39:20 Notice: device: wlan0: packets: 14485, drops: 0 (0.00%), invalid chksum: 0
+[134121 - Suricata-Main] 2025-08-06 15:39:21 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[134121 - Suricata-Main] 2025-08-06 15:39:21 Info: cpu: CPUs/cores online: 10
+[134121 - Suricata-Main] 2025-08-06 15:39:21 Info: suricata: Setting engine mode to IDS mode by default
+[134121 - Suricata-Main] 2025-08-06 15:39:21 Info: exception-policy: master exception-policy set to: auto
+[134123 - Suricata-Main] 2025-08-06 15:39:21 Info: logopenfile: fast output device (regular) initialized: fast.log
+[134123 - Suricata-Main] 2025-08-06 15:39:21 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[134123 - Suricata-Main] 2025-08-06 15:39:21 Info: logopenfile: stats output device (regular) initialized: stats.log
+[134123 - Suricata-Main] 2025-08-06 15:39:21 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[134123 - Suricata-Main] 2025-08-06 15:39:21 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Request flood detected";       app-layer-event:dnp3.flooded; classtype:protocol-command-decode; sid:2270000; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 7
+[134123 - Suricata-Main] 2025-08-06 15:39:21 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[134123 - Suricata-Main] 2025-08-06 15:39:21 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Length too small";       app-layer-event:dnp3.len_too_small; classtype:protocol-command-decode; sid:2270001; rev:3;)" from file /etc/suricata/rules/dnp3-events.rules at line 13
+[134123 - Suricata-Main] 2025-08-06 15:39:21 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[134123 - Suricata-Main] 2025-08-06 15:39:21 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Bad link CRC";       app-layer-event:dnp3.bad_link_crc; classtype:protocol-command-decode; sid:2270002; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 17
+[134123 - Suricata-Main] 2025-08-06 15:39:21 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[134123 - Suricata-Main] 2025-08-06 15:39:21 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Bad transport CRC";       app-layer-event:dnp3.bad_transport_crc; classtype:protocol-command-decode; sid:2270003; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 21
+[134123 - Suricata-Main] 2025-08-06 15:39:21 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[134123 - Suricata-Main] 2025-08-06 15:39:21 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Unknown object";       app-layer-event:dnp3.unknown_object; classtype:protocol-command-decode; sid:2270004; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 25
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Protocol version"; app-layer-event:modbus.invalid_protocol_id; classtype:protocol-command-decode; sid:2250001; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 2
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus unsolicited response"; app-layer-event:modbus.unsolicited_response; classtype:protocol-command-decode; sid:2250002; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 4
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Length"; app-layer-event:modbus.invalid_length; classtype:protocol-command-decode; sid:2250003; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 6
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Function code"; app-layer-event:modbus.invalid_function_code; classtype:protocol-command-decode; sid:2250005; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 8
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Value"; app-layer-event:modbus.invalid_value; classtype:protocol-command-decode; sid:2250006; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 10
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Exception code invalid"; flow:to_client; app-layer-event:modbus.invalid_exception_code; classtype:protocol-command-decode; sid:2250007; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 12
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Data mismatch"; flow:to_client; app-layer-event:modbus.value_mismatch; classtype:protocol-command-decode; sid:2250008; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 14
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Request flood detected"; flow:to_server; app-layer-event:modbus.flooded; classtype:protocol-command-decode; sid:2250009; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 16
+[134123 - Suricata-Main] 2025-08-06 15:39:39 Info: detect: 75 rule files processed. 44371 rules successfully loaded, 13 rules failed, 0
+[134123 - Suricata-Main] 2025-08-06 15:39:40 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[134123 - Suricata-Main] 2025-08-06 15:39:40 Info: detect: 44374 signatures processed. 947 are IP-only rules, 5108 are inspecting packet payload, 38101 inspect application layer, 109 are decoder event only
+[134123 - Suricata-Main] 2025-08-06 15:39:49 Warning: af-packet: wlan0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[134123 - Suricata-Main] 2025-08-06 15:39:49 Info: runmodes: wlan0: creating 10 threads
+[134123 - Suricata-Main] 2025-08-06 15:39:50 Info: unix-manager: unix socket '/var/run/suricata-command.socket'
+[134123 - Suricata-Main] 2025-08-06 15:39:51 Notice: threads: Threads created -> W: 10 FM: 1 FR: 1   Engine started.
+[134123 - Suricata-Main] 2025-08-06 15:51:57 Notice: suricata: Signal Received.  Stopping engine.
+[134123 - Suricata-Main] 2025-08-06 15:51:58 Info: suricata: time elapsed 729.270s
+[134123 - Suricata-Main] 2025-08-06 15:52:01 Info: counters: Alerts: 1
+[134123 - Suricata-Main] 2025-08-06 15:52:01 Notice: device: wlan0: packets: 7658, drops: 0 (0.00%), invalid chksum: 0
+[140488 - Suricata-Main] 2025-08-06 15:52:02 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[140488 - Suricata-Main] 2025-08-06 15:52:02 Info: cpu: CPUs/cores online: 10
+[140488 - Suricata-Main] 2025-08-06 15:52:02 Info: suricata: Setting engine mode to IDS mode by default
+[140488 - Suricata-Main] 2025-08-06 15:52:02 Info: exception-policy: master exception-policy set to: auto
+[140489 - Suricata-Main] 2025-08-06 15:52:02 Info: logopenfile: fast output device (regular) initialized: fast.log
+[140489 - Suricata-Main] 2025-08-06 15:52:02 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[140489 - Suricata-Main] 2025-08-06 15:52:02 Info: logopenfile: stats output device (regular) initialized: stats.log
+[140489 - Suricata-Main] 2025-08-06 15:52:02 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[140489 - Suricata-Main] 2025-08-06 15:52:02 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Request flood detected";       app-layer-event:dnp3.flooded; classtype:protocol-command-decode; sid:2270000; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 7
+[140489 - Suricata-Main] 2025-08-06 15:52:02 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[140489 - Suricata-Main] 2025-08-06 15:52:02 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Length too small";       app-layer-event:dnp3.len_too_small; classtype:protocol-command-decode; sid:2270001; rev:3;)" from file /etc/suricata/rules/dnp3-events.rules at line 13
+[140489 - Suricata-Main] 2025-08-06 15:52:02 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[140489 - Suricata-Main] 2025-08-06 15:52:02 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Bad link CRC";       app-layer-event:dnp3.bad_link_crc; classtype:protocol-command-decode; sid:2270002; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 17
+[140489 - Suricata-Main] 2025-08-06 15:52:02 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[140489 - Suricata-Main] 2025-08-06 15:52:02 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Bad transport CRC";       app-layer-event:dnp3.bad_transport_crc; classtype:protocol-command-decode; sid:2270003; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 21
+[140489 - Suricata-Main] 2025-08-06 15:52:02 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[140489 - Suricata-Main] 2025-08-06 15:52:02 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Unknown object";       app-layer-event:dnp3.unknown_object; classtype:protocol-command-decode; sid:2270004; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 25
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Protocol version"; app-layer-event:modbus.invalid_protocol_id; classtype:protocol-command-decode; sid:2250001; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 2
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus unsolicited response"; app-layer-event:modbus.unsolicited_response; classtype:protocol-command-decode; sid:2250002; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 4
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Length"; app-layer-event:modbus.invalid_length; classtype:protocol-command-decode; sid:2250003; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 6
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Function code"; app-layer-event:modbus.invalid_function_code; classtype:protocol-command-decode; sid:2250005; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 8
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Value"; app-layer-event:modbus.invalid_value; classtype:protocol-command-decode; sid:2250006; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 10
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Exception code invalid"; flow:to_client; app-layer-event:modbus.invalid_exception_code; classtype:protocol-command-decode; sid:2250007; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 12
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Data mismatch"; flow:to_client; app-layer-event:modbus.value_mismatch; classtype:protocol-command-decode; sid:2250008; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 14
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Request flood detected"; flow:to_server; app-layer-event:modbus.flooded; classtype:protocol-command-decode; sid:2250009; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 16
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Info: detect: 75 rule files processed. 44371 rules successfully loaded, 13 rules failed, 0
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[140489 - Suricata-Main] 2025-08-06 15:52:16 Info: detect: 44374 signatures processed. 947 are IP-only rules, 5108 are inspecting packet payload, 38101 inspect application layer, 109 are decoder event only
+[140489 - Suricata-Main] 2025-08-06 15:52:25 Warning: af-packet: wlan0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[140489 - Suricata-Main] 2025-08-06 15:52:25 Info: runmodes: wlan0: creating 10 threads
+[140489 - Suricata-Main] 2025-08-06 15:52:25 Info: unix-manager: unix socket '/var/run/suricata-command.socket'
+[140489 - Suricata-Main] 2025-08-06 15:52:26 Notice: threads: Threads created -> W: 10 FM: 1 FR: 1   Engine started.
+[140489 - Suricata-Main] 2025-08-06 15:53:42 Notice: suricata: Signal Received.  Stopping engine.
+[140489 - Suricata-Main] 2025-08-06 15:53:43 Info: suricata: time elapsed 78.046s
+[140489 - Suricata-Main] 2025-08-06 15:53:45 Info: counters: Alerts: 0
+[140489 - Suricata-Main] 2025-08-06 15:53:45 Notice: device: wlan0: packets: 440, drops: 0 (0.00%), invalid chksum: 0
+[141439 - Suricata-Main] 2025-08-06 15:53:53 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[141439 - Suricata-Main] 2025-08-06 15:53:53 Info: cpu: CPUs/cores online: 10
+[141439 - Suricata-Main] 2025-08-06 15:53:53 Info: suricata: Setting engine mode to IDS mode by default
+[141439 - Suricata-Main] 2025-08-06 15:53:53 Info: exception-policy: master exception-policy set to: auto
+[141440 - Suricata-Main] 2025-08-06 15:53:53 Info: logopenfile: fast output device (regular) initialized: fast.log
+[141440 - Suricata-Main] 2025-08-06 15:53:53 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[141440 - Suricata-Main] 2025-08-06 15:53:53 Info: logopenfile: stats output device (regular) initialized: stats.log
+[141440 - Suricata-Main] 2025-08-06 15:53:53 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[141440 - Suricata-Main] 2025-08-06 15:53:53 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Request flood detected";       app-layer-event:dnp3.flooded; classtype:protocol-command-decode; sid:2270000; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 7
+[141440 - Suricata-Main] 2025-08-06 15:53:53 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[141440 - Suricata-Main] 2025-08-06 15:53:53 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Length too small";       app-layer-event:dnp3.len_too_small; classtype:protocol-command-decode; sid:2270001; rev:3;)" from file /etc/suricata/rules/dnp3-events.rules at line 13
+[141440 - Suricata-Main] 2025-08-06 15:53:53 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[141440 - Suricata-Main] 2025-08-06 15:53:53 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Bad link CRC";       app-layer-event:dnp3.bad_link_crc; classtype:protocol-command-decode; sid:2270002; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 17
+[141440 - Suricata-Main] 2025-08-06 15:53:53 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[141440 - Suricata-Main] 2025-08-06 15:53:53 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Bad transport CRC";       app-layer-event:dnp3.bad_transport_crc; classtype:protocol-command-decode; sid:2270003; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 21
+[141440 - Suricata-Main] 2025-08-06 15:53:53 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[141440 - Suricata-Main] 2025-08-06 15:53:53 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Unknown object";       app-layer-event:dnp3.unknown_object; classtype:protocol-command-decode; sid:2270004; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 25
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Protocol version"; app-layer-event:modbus.invalid_protocol_id; classtype:protocol-command-decode; sid:2250001; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 2
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus unsolicited response"; app-layer-event:modbus.unsolicited_response; classtype:protocol-command-decode; sid:2250002; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 4
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Length"; app-layer-event:modbus.invalid_length; classtype:protocol-command-decode; sid:2250003; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 6
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Function code"; app-layer-event:modbus.invalid_function_code; classtype:protocol-command-decode; sid:2250005; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 8
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Value"; app-layer-event:modbus.invalid_value; classtype:protocol-command-decode; sid:2250006; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 10
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Exception code invalid"; flow:to_client; app-layer-event:modbus.invalid_exception_code; classtype:protocol-command-decode; sid:2250007; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 12
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Data mismatch"; flow:to_client; app-layer-event:modbus.value_mismatch; classtype:protocol-command-decode; sid:2250008; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 14
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Request flood detected"; flow:to_server; app-layer-event:modbus.flooded; classtype:protocol-command-decode; sid:2250009; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 16
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Info: detect: 75 rule files processed. 44371 rules successfully loaded, 13 rules failed, 0
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[141440 - Suricata-Main] 2025-08-06 15:54:06 Info: detect: 44374 signatures processed. 947 are IP-only rules, 5108 are inspecting packet payload, 38101 inspect application layer, 109 are decoder event only
+[141440 - Suricata-Main] 2025-08-06 15:54:15 Warning: af-packet: wlan0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[141440 - Suricata-Main] 2025-08-06 15:54:15 Info: runmodes: wlan0: creating 10 threads
+[141440 - Suricata-Main] 2025-08-06 15:54:15 Info: unix-manager: unix socket '/var/run/suricata-command.socket'
+[141440 - Suricata-Main] 2025-08-06 15:54:16 Notice: threads: Threads created -> W: 10 FM: 1 FR: 1   Engine started.
+[141440 - Suricata-Main] 2025-08-06 15:54:26 Notice: suricata: Signal Received.  Stopping engine.
+[141440 - Suricata-Main] 2025-08-06 15:54:27 Info: suricata: time elapsed 11.462s
+[141440 - Suricata-Main] 2025-08-06 15:54:28 Info: counters: Alerts: 0
+[141440 - Suricata-Main] 2025-08-06 15:54:29 Notice: device: wlan0: packets: 37, drops: 0 (0.00%), invalid chksum: 0
+[142153 - Suricata-Main] 2025-08-06 15:55:17 Notice: suricata: This is Suricata version 7.0.10 RELEASE running in SYSTEM mode
+[142153 - Suricata-Main] 2025-08-06 15:55:17 Info: cpu: CPUs/cores online: 10
+[142153 - Suricata-Main] 2025-08-06 15:55:17 Info: suricata: Setting engine mode to IDS mode by default
+[142153 - Suricata-Main] 2025-08-06 15:55:17 Info: exception-policy: master exception-policy set to: auto
+[142161 - Suricata-Main] 2025-08-06 15:55:17 Info: logopenfile: fast output device (regular) initialized: fast.log
+[142161 - Suricata-Main] 2025-08-06 15:55:17 Info: logopenfile: eve-log output device (regular) initialized: eve.json
+[142161 - Suricata-Main] 2025-08-06 15:55:17 Info: logopenfile: stats output device (regular) initialized: stats.log
+[142161 - Suricata-Main] 2025-08-06 15:55:17 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[142161 - Suricata-Main] 2025-08-06 15:55:17 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Request flood detected";       app-layer-event:dnp3.flooded; classtype:protocol-command-decode; sid:2270000; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 7
+[142161 - Suricata-Main] 2025-08-06 15:55:17 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[142161 - Suricata-Main] 2025-08-06 15:55:17 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Length too small";       app-layer-event:dnp3.len_too_small; classtype:protocol-command-decode; sid:2270001; rev:3;)" from file /etc/suricata/rules/dnp3-events.rules at line 13
+[142161 - Suricata-Main] 2025-08-06 15:55:17 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[142161 - Suricata-Main] 2025-08-06 15:55:17 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Bad link CRC";       app-layer-event:dnp3.bad_link_crc; classtype:protocol-command-decode; sid:2270002; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 17
+[142161 - Suricata-Main] 2025-08-06 15:55:17 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[142161 - Suricata-Main] 2025-08-06 15:55:17 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Bad transport CRC";       app-layer-event:dnp3.bad_transport_crc; classtype:protocol-command-decode; sid:2270003; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 21
+[142161 - Suricata-Main] 2025-08-06 15:55:17 Error: detect-parse: protocol "dnp3" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.dnp3.detection-enabled
+[142161 - Suricata-Main] 2025-08-06 15:55:17 Error: detect: error parsing signature "alert dnp3 any any -> any any (msg:"SURICATA DNP3 Unknown object";       app-layer-event:dnp3.unknown_object; classtype:protocol-command-decode; sid:2270004; rev:2;)" from file /etc/suricata/rules/dnp3-events.rules at line 25
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Protocol version"; app-layer-event:modbus.invalid_protocol_id; classtype:protocol-command-decode; sid:2250001; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 2
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus unsolicited response"; app-layer-event:modbus.unsolicited_response; classtype:protocol-command-decode; sid:2250002; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 4
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Length"; app-layer-event:modbus.invalid_length; classtype:protocol-command-decode; sid:2250003; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 6
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Function code"; app-layer-event:modbus.invalid_function_code; classtype:protocol-command-decode; sid:2250005; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 8
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus invalid Value"; app-layer-event:modbus.invalid_value; classtype:protocol-command-decode; sid:2250006; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 10
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Exception code invalid"; flow:to_client; app-layer-event:modbus.invalid_exception_code; classtype:protocol-command-decode; sid:2250007; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 12
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Data mismatch"; flow:to_client; app-layer-event:modbus.value_mismatch; classtype:protocol-command-decode; sid:2250008; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 14
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect-parse: protocol "modbus" cannot be used in a signature.  Either detection for this protocol is not yet supported OR detection has been disabled for protocol through the yaml option app-layer.protocols.modbus.detection-enabled
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Error: detect: error parsing signature "alert modbus any any -> any any (msg:"SURICATA Modbus Request flood detected"; flow:to_server; app-layer-event:modbus.flooded; classtype:protocol-command-decode; sid:2250009; rev:2;)" from file /etc/suricata/rules/modbus-events.rules at line 16
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Info: detect: 75 rule files processed. 44372 rules successfully loaded, 13 rules failed, 0
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Info: threshold-config: Threshold config parsed: 0 rule(s) found
+[142161 - Suricata-Main] 2025-08-06 15:55:30 Info: detect: 44375 signatures processed. 947 are IP-only rules, 5108 are inspecting packet payload, 38102 inspect application layer, 109 are decoder event only
+[142161 - Suricata-Main] 2025-08-06 15:55:39 Warning: af-packet: wlan0: AF_PACKET tpacket-v3 is recommended for non-inline operation
+[142161 - Suricata-Main] 2025-08-06 15:55:39 Info: runmodes: wlan0: creating 10 threads
+[142161 - Suricata-Main] 2025-08-06 15:55:39 Info: unix-manager: unix socket '/var/run/suricata-command.socket'
+[142161 - Suricata-Main] 2025-08-06 15:55:42 Notice: threads: Threads created -> W: 10 FM: 1 FR: 1   Engine started.
+[142412 - W#10-wlan0] 2025-08-06 15:56:55 Warning: af-packet: wlan0: failed to poll interface: Network is down
+[142405 - W#08-wlan0] 2025-08-06 15:56:55 Warning: af-packet: wlan0: failed to poll interface: Network is down
+[142397 - W#03-wlan0] 2025-08-06 15:56:55 Warning: af-packet: wlan0: failed to poll interface: Network is down
+[142401 - W#07-wlan0] 2025-08-06 15:56:55 Warning: af-packet: wlan0: failed to poll interface: Network is down
+[142400 - W#06-wlan0] 2025-08-06 15:56:55 Warning: af-packet: wlan0: failed to poll interface: Network is down
+[142399 - W#05-wlan0] 2025-08-06 15:56:55 Warning: af-packet: wlan0: failed to poll interface: Network is down
+[142410 - W#09-wlan0] 2025-08-06 15:56:55 Warning: af-packet: wlan0: failed to poll interface: Network is down
+[142396 - W#02-wlan0] 2025-08-06 15:56:55 Warning: af-packet: wlan0: failed to poll interface: Network is down
+[142395 - W#01-wlan0] 2025-08-06 15:56:55 Warning: af-packet: wlan0: failed to poll interface: Network is down
+[142398 - W#04-wlan0] 2025-08-06 15:56:55 Warning: af-packet: wlan0: failed to poll interface: Network is down
+[142412 - W#10-wlan0] 2025-08-07 07:49:07 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:49:07 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:49:08 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:49:08 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:49:08 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:49:08 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:49:08 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:49:08 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:49:08 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:49:08 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:49:30 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:49:30 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:49:30 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:49:30 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:49:30 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:49:30 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:49:30 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:49:30 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:49:30 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:49:30 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:49:52 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:49:52 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:49:52 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:49:52 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:49:52 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:49:52 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:49:52 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:49:52 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:49:52 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:49:53 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:50:14 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:50:14 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:50:14 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:50:14 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:50:14 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:50:14 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:50:14 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:50:14 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:50:14 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:50:14 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:50:35 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:50:35 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:50:35 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:50:36 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:50:36 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:50:36 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:50:36 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:50:36 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:50:36 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:50:36 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:50:56 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:50:57 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:50:57 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:50:57 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:50:57 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:50:57 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:50:57 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:50:57 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:50:57 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:50:57 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:51:18 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:51:19 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:51:19 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:51:19 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:51:19 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:51:19 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:51:19 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:51:19 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:51:19 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:51:20 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:51:40 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:51:40 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:51:41 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:51:41 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:51:41 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:51:41 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:51:41 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:51:41 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:51:41 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:51:41 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:52:03 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:52:03 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:52:03 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:52:04 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:52:04 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:52:04 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:52:04 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:52:04 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:52:04 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:52:04 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:52:25 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:52:25 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:52:25 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:52:25 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:52:25 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:52:25 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:52:25 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:52:26 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:52:26 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:52:26 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:52:46 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:52:46 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:52:47 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:52:47 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:52:47 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:52:47 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:52:47 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:52:48 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:52:48 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:52:48 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:53:08 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:53:08 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:53:08 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:53:09 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:53:09 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:53:09 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:53:09 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:53:09 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:53:09 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:53:09 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:53:30 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:53:30 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:53:30 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:53:30 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:53:30 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:53:30 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:53:31 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:53:31 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:53:31 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:53:31 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:53:51 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:53:52 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:53:52 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:53:52 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:53:52 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:53:52 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:53:52 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:53:53 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:53:53 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:53:53 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:54:13 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:54:13 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:54:13 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:54:14 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:54:14 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:54:14 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:54:14 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:54:14 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:54:14 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:54:14 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:54:35 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:54:35 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:54:35 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:54:35 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:54:35 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:54:35 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:54:36 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:54:36 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:54:36 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:54:36 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:54:57 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:54:57 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:54:57 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:54:57 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:54:57 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:54:57 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:54:57 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:54:57 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:54:58 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:54:58 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:55:18 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:55:19 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:55:19 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:55:19 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:55:19 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:55:19 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:55:19 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:55:19 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:55:19 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:55:20 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:55:40 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:55:40 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:55:40 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:55:40 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:55:40 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:55:41 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:55:41 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:55:41 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:55:41 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:55:42 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:56:02 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:56:02 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:56:02 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:56:02 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:56:02 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:56:02 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:56:02 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:56:03 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:56:03 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:56:03 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:56:23 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:56:24 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:56:24 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:56:24 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:56:24 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:56:24 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:56:24 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:56:24 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:56:24 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:56:25 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:56:45 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:56:45 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:56:45 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:56:45 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:56:46 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:56:46 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:56:46 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:56:46 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:56:46 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:56:47 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:57:07 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:57:07 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:57:07 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:57:07 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:57:07 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:57:07 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:57:07 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:57:08 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:57:08 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:57:08 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:57:29 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:57:29 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:57:29 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:57:29 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:57:30 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:57:30 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:57:30 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:57:30 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:57:30 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:57:31 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:57:51 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:57:51 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:57:51 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:57:51 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:57:51 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:57:51 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:57:52 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:57:52 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:57:52 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:57:53 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:58:13 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:58:13 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:58:14 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:58:14 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:58:14 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:58:14 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:58:14 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:58:14 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:58:14 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:58:15 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:58:35 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:58:35 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:58:36 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:58:36 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:58:36 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:58:36 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:58:36 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:58:36 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:58:36 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:58:36 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:58:56 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:58:57 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:58:57 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:58:57 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:58:57 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:58:57 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:58:57 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:58:58 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:58:58 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:58:58 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:59:19 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:59:19 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:59:20 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:59:20 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:59:20 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:59:20 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:59:20 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:59:20 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:59:20 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:59:20 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 07:59:41 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 07:59:41 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 07:59:42 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 07:59:42 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 07:59:42 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 07:59:42 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 07:59:42 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 07:59:42 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 07:59:42 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 07:59:42 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:00:03 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:00:03 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:00:03 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:00:03 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:00:04 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:00:04 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:00:04 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:00:04 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:00:04 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:00:04 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:00:24 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:00:24 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:00:25 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:00:25 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:00:25 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:00:25 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:00:25 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:00:25 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:00:25 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:00:26 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:00:46 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:00:46 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:00:47 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:00:47 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:00:47 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:00:47 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:00:47 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:00:47 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:00:47 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:00:48 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:01:10 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:01:10 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:01:10 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:01:10 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:01:11 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:01:11 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:01:11 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:01:11 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:01:11 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:01:11 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:01:32 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:01:33 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:01:33 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:01:33 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:01:33 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:01:33 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:01:33 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:01:34 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:01:34 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:01:34 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:01:54 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:01:54 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:01:55 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:01:55 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:01:55 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:01:55 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:01:55 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:01:56 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:01:56 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:01:56 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:02:16 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:02:16 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:02:16 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:02:17 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:02:17 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:02:18 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:02:18 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:02:18 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:02:18 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:02:18 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:02:38 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:02:38 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:02:39 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:02:39 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:02:39 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:02:40 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:02:40 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:02:40 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:02:40 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:02:40 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:03:00 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:03:01 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:03:01 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:03:01 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:03:02 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:03:02 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:03:02 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:03:02 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:03:02 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:03:02 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:03:22 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:03:22 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:03:22 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:03:22 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:03:23 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:03:23 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:03:23 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:03:24 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:03:24 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:03:24 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:03:43 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:03:44 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:03:44 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:03:44 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:03:45 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:03:45 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:03:45 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:03:45 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:03:45 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:03:45 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:04:05 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:04:06 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:04:06 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:04:06 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:04:07 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:04:07 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:04:07 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:04:07 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:04:07 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:04:07 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:04:28 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:04:28 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:04:28 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:04:28 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:04:29 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:04:29 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:04:29 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:04:30 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:04:30 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:04:30 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:04:50 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:04:50 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:04:51 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:04:51 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:04:51 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:04:51 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:04:52 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:04:52 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:04:52 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:04:53 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:05:12 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:05:12 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:05:12 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:05:13 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:05:13 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:05:13 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:05:14 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:05:14 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:05:14 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:05:14 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:05:33 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:05:34 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:05:34 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:05:34 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:05:35 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:05:35 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:05:35 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:05:35 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:05:36 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:05:36 Warning: af-packet: wlan0: can't reopen interface
+[142410 - W#09-wlan0] 2025-08-07 08:05:56 Warning: af-packet: wlan0: can't reopen interface
+[142412 - W#10-wlan0] 2025-08-07 08:05:56 Warning: af-packet: wlan0: can't reopen interface
+[142396 - W#02-wlan0] 2025-08-07 08:05:57 Warning: af-packet: wlan0: can't reopen interface
+[142397 - W#03-wlan0] 2025-08-07 08:05:57 Warning: af-packet: wlan0: can't reopen interface
+[142405 - W#08-wlan0] 2025-08-07 08:05:58 Warning: af-packet: wlan0: can't reopen interface
+[142400 - W#06-wlan0] 2025-08-07 08:05:58 Warning: af-packet: wlan0: can't reopen interface
+[142399 - W#05-wlan0] 2025-08-07 08:05:58 Warning: af-packet: wlan0: can't reopen interface
+[142398 - W#04-wlan0] 2025-08-07 08:05:58 Warning: af-packet: wlan0: can't reopen interface
+[142395 - W#01-wlan0] 2025-08-07 08:05:58 Warning: af-packet: wlan0: can't reopen interface
+[142401 - W#07-wlan0] 2025-08-07 08:05:58 Warning: af-packet: wlan0: can't reopen interface

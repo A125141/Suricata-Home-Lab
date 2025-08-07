@@ -1,0 +1,6 @@
+08/06/2025-15:04:12.470561  [**] [1:2010937:3] ET SCAN Suspicious inbound to mySQL port 3306 [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.70.109:35953 -> 192.168.70.196:3306
+08/06/2025-15:04:12.817432  [**] [1:2002910:6] ET SCAN Potential VNC Scan 5800-5820 [**] [Classification: Attempted Information Leak] [Priority: 2] {TCP} 192.168.70.109:35953 -> 192.168.70.196:5810
+08/06/2025-15:04:12.931457  [**] [1:2010935:3] ET SCAN Suspicious inbound to MSSQL port 1433 [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.70.109:35953 -> 192.168.70.196:1433
+08/06/2025-15:04:13.059172  [**] [1:2010939:3] ET SCAN Suspicious inbound to PostgreSQL port 5432 [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.70.109:35953 -> 192.168.70.196:5432
+08/06/2025-15:04:13.198053  [**] [1:2010936:3] ET SCAN Suspicious inbound to Oracle SQL port 1521 [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.70.109:35953 -> 192.168.70.196:1521
+08/06/2025-15:42:49.067755  [**] [1:1000002:1] Custom Rule: Found 'admin' in HTTP URI [**] [Classification: (null)] [Priority: 3] {TCP} 192.168.70.109:64694 -> 192.168.70.196:80

@@ -1,0 +1,3 @@
+reject http any any -> any any (msg:"Access Blocked mf: 'login' keyword detected"; content:"login"; http_uri; nocase; sid:1000006; rev:1;)
+alert http any any -> any any (msg:"Found login in HTTP URI"; content:"login"; http_uri; nocase; sid:1000003; rev:1;)
+
