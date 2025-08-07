@@ -14,7 +14,6 @@ This guide helps you set up a simple Suricata IDS/IPS lab using Virtual Machines
 sudo apt update
 sudo apt install apache2 -y
 ```
-Test by visiting: http://<target-ip>
 
 ## 3. 🧰 Install Suricata
 ```bash
